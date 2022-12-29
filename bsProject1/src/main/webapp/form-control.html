@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>Form의 controls</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<h2 class="text-center" style="text-shadow:2px 2px 2px black,0 0 250px blue,0 0 5px darkblue;">Form control: textarea</h2>
+	<form action="#">
+		<div class="form-group">
+			<label for="comment">Comment:</label>
+			<textarea class="form-control" rows="5" id="comment" name="text"></textarea>	
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>	
+	</form>
+</div>
+
+<br/><br/>
+<div class="container">
+	<h2 class="text-center" style="text-shadow:2px 2px 4px #000000;">type=checkbox(수직)</h2>
+	<form action="#">
+		<div class="form-group form-check">
+			<label class="form-check-label" for="check1">
+				<input type="checkbox" class="form-check-input" id="check1" name="option1"
+					value="something" checked>Option 1						
+			</label>
+		</div>
+		
+		<div class="form-group form-check">
+			<label class="form-check-label" for="check2">
+				<input type="checkbox" class="form-check-input" id="check2" name="option1"
+					value="something" >Option 2
+			</label>
+		</div>	
+		
+		<div class="form-group form-check">
+			<label class="form-check-label" for="check3">
+				<input type="checkbox" class="form-check-input" id="check3" name="option1"
+					value="something" disabled>Option 3
+			</label>
+		</div>		
+	</form>	
+		
+	<button type="submit" class="btn btn-primary"></button>
+</div>
+
+<br/><br/>
+<div class="container">
+	<h2 class="text-center" style="text-shadow:2px 2px 4px #000000;">type=checkbox(수평)</h2>
+	<form action="#">
+		<div class="form-check-lnline"> <!-- checkbox를 수평배치 -->
+			<label class="form-check-label" for="check4">
+				<input type="checkbox" class="form-check-input" id="check4" name="option4"
+					value="something" checked>Option 4						
+			</label>
+		</div>
+		
+		<div class="form-check-lnline">
+			<label class="form-check-label" for="check5">
+				<input type="checkbox" class="form-check-input" id="check5" name="option5"
+					value="something" Option>5
+			</label>
+		</div>	
+		
+		<div class="form-check-lnline">
+			<label class="form-check-label" for="check6">
+				<input type="checkbox" class="form-check-input" id="check6" name="option6"
+					value="something" disabled>Option 6
+			</label>
+		</div>		
+	</form>	
+		
+	<button type="submit" class="btn btn-primary"></button>
+</div>
+
+<br/><br/>
+<div class="container">
+	<h2 class="text-center" style="text-shadow:2px 2px 4px #000000;">type=radio(수평)</h2>
+	<form action="#">
+		<div class="form-group form-check">
+			<label class="form-check-label" for="radio1">
+				<input type="radio" class="form-check-input" id="radio1" name="radio1"
+					value="something" checked>radio 1						
+			</label>
+		</div>
+		
+		<div class="form-group form-check">
+			<label class="form-check-label" for="radio2">
+				<input type="radio" class="form-check-input" id="radio2" name="radio2"
+					value="something" >radio 2
+			</label>
+		</div>	
+		
+		<div class="form-group form-check">
+			<label class="form-check-label" for="radio1">
+				<input type="radio" class="form-check-input" id="radio3" name="radio3"
+					value="something" disabled>radio 3
+			</label>
+		</div>		
+	</form>	
+		
+	<button type="submit" class="btn btn-primary"></button>
+</div>
+
+<br/><br/>
+<div class="container">
+	<h2 class="text-center" style="text-shadow:2px 2px 4px #000000;">type=radio(수직)</h2>
+	<form action="#">
+		<div class="form-check-lnline"> <!-- checkbox를 수평배치 -->
+			<label class="form-check-label" for="radio4">
+				<input type="radio" class="form-check-input" id="radio4" name="radio4"
+					value="something" checked>radio 4						
+			</label>
+		</div>
+		
+		<div class="form-check-lnline">
+			<label class="form-check-label" for="radio5">
+				<input type="radio" class="form-check-input" id="radio5" name="radio5"
+					value="something" >radio 5
+			</label>
+		</div>	
+		
+		<div class="form-check-lnline">
+			<label class="form-check-label" for="radio6">
+				<input type="radio" class="form-check-input" id="radio6" name="radio6"
+					value="something" disabled>radio 6
+			</label>
+		</div>		
+	</form>	
+		
+	<button type="submit" class="btn btn-primary"></button>
+</div>
+
+<br/><br/>
+<div class="container">
+	<h2 class="text-center" style="text-shadow:2px 2px 4px #000000;">select</h2>
+	<form>
+		<div class="from-group">
+			<label for="sel1">Select list (Select one)</label>
+			<select class="form-control" id="sel1" name="sellist1">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+			<br/>
+				<label for="sel2">Multple select list (hold shift to select more than one):</label>
+				<select mutiple class="form-control" id="sel2" name="sellist2"> <!-- 복수개 선택 multiple -->		
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+		</div>	
+		</select>	
+		<button type="submit" class="btn btn-primary">Submit</button>		
+	</form>
+</div>
+
+<br/><br/>
+<div class="container">
+	<h2 class="text-center" style="text-shadow:2px 2px 4px #000000;">control의 크기</h2>
+	<form>
+		<!-- form control들의 크기는 form-control과 함게 form-control- 크기를 사용  -->
+		<div class="form-group" >
+			<input type="text" class="form-control form-control-sm" placeholder="Small form control" name="text1">
+		
+		</div>
+		<div class="form-group" >
+			<input type="text" class="form-control" placeholder="Default form control" name="text2">
+		
+		</div>
+	
+		<div class="form-group" >
+			<input type="text" class="form-control form-control-lg" placeholder="Large form control" name="text3">
+		
+		</div>
+	
+	</form>
+</div>
+
+<br/><br/>
+<div class="container">
+	<h2 class="text-center" style="text-shadow:2px 2px 4px #000000;">입력창을 문자열로 보이게 하기</h2>
+	<form action="#" >
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="Default form control" name="text1">
+		</div>
+	
+		<div class="form-group">
+			<input type="text" class="form-control-plaintext" placeholder="form control form with plain text" name="text2">
+			<!-- 입력창이 아니고 일반 문자열로 보이게, 단 입력도 되고 submit됨 -->
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+
+<br/><br/>
+<div class="container">
+	<h2 class="text-center" style="text-shadow:2px 2px 4px #000000;">type=file과 type=range</h2>
+	<form>
+		<div class="form-group">
+			<input type="text" class="form-control-range" name="range">
+		</div>
+	
+		<div class="form-group">
+			<input type="file" class="form-control-file border border-danger" name="file">
+			<!-- 입력창이 아니고 일반 문자열로 보이게, 단 입력도 되고 submit됨 -->
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>	
+	</form>
+</div>
+
+
+</body>
+</html>

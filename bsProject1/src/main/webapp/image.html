@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>Image</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<base href="http://www.w3schools.com/bootstrap4/"/> <!-- 기본경로 설정 -->
+</head>
+<body>
+
+<div class="container mt-3 border border-danger p-3">
+	<h2>Rounded Corners</h2>
+	<img src="cinqueterre.jpg" class="rounded" alt="Cinque Terre" width="304" height="236">	
+	<!-- img에서 class="rounded"는 둥근 모서리  -->
+</div>
+
+<div class="container mt-3 border border-danger p-3">
+	<h2>Rounded circle</h2>
+	<img src="cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre" width="304" height="236">	
+	<!-- img에서 class="rounded-circle"는 둥근 이미지, width와 height가 같으면 정원, 다르면 타원 -->
+</div>
+
+<div class="container mt-3 border border-danger p-3">
+	<h2>이미지에 테두리 주기</h2>
+	<img src="cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">	
+	<!-- img에서 class="img-thumbnail"는 이미지에 테두리 주기 -->
+</div>
+ 
+<div class="container clearfix mt-3 border border-danger">
+	<h2>Aligning images</h2>
+	<p>Use the float classes to float the image to the left or to the right:</p>
+	<img src="paris.jpg" class="float-left" alt="paris" width="304" height="236">  <!--왼쪽 정렬 --> 
+	<img src="paris.jpg" class="float-right" alt="paris" width="304" height="236">  <!--오른쪽 정렬  --> 
+</div>                    
+
+<div class="container mt-3 border border-danger p-3">
+	<h2 class="text-center">Centered Image</h2>
+	<!-- text-center클래스는 문장의 수평 중앙 정렬 클래스 -->
+	<img src="paris.jpg" class="mx-auto d-block" style="width:50%">
+	<!-- img는 볼록엘리먼트가 아니므로 margin을 사용할수가 없다 마진을 사용하기 위해 d-block(블록레벨변환 클래스)을 사용-->
+	<!-- mx-auto는 수평중앙정렬시 사용 -->
+
+</div>
+
+<div class="container mt-3 border border-danger p-3">
+	<h2>Image의 RWD</h2>
+	<img class="img-fluid" scr="img_chania.jpg"  alt="chania" width="460" height="345">
+	<!-- class="img-fluid"는 화면의 크기 변동에 따라 이미지 크기 변동이 없음 -->
+
+</div>
+</body>
+</html>

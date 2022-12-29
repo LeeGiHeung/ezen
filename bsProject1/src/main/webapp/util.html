@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>BS4 util class</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+span{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 6px;
+	background-color: #555555; /* RGB값들이 모두 동일시는 회색 계열 */
+	
+}
+i {
+	border : 1px solid grey;
+	
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+	<h2>모서리를 둥글게(배경색을 주고 난 뒤에 사용)</h2>
+	<span class="rounded-sm"></span>
+	<span class="rounded"></span>
+	<span class="rounded-lg"></span>
+	<span class="rounded-top"></span>
+	<span class="rounded-right"></span>
+	<span class="rounded-bottom"></span>
+	<span class="rounded-left"></span>
+	<span class="rounded-circle"></span>
+	<span class="rounded-0"></span>
+
+</div>
+
+<div class="container">
+	<h2>float와 clearfix클래스</h2>
+	<!-- float-left는 왼쪽 배치,float-right는 오른쪽 배치 clearfix는 
+	이 엘리먼트 다음에서는 float 제거  -->	
+	<div class="clearfix">
+		<span class="float-left text-white">Float left</span>
+		<span class="float-right text-white">Float right</span>
+	</div>
+	<!-- clearfix 없을시는 계속 float됨 -->
+	<!--  
+	<div>
+		<span class="float-left text-white">Float left</span>
+		<span class="float-right text-white">Float right</span>
+	</div>
+	<p>LEEGH</p>
+	-->
+</div>
+
+<div class="container mt-5">
+	<h2>Horizontal Centering</h2>
+	<div class="mx-auto bg-warning" style="width:150px">Centered</div>
+	<!-- mx-auto는 수평 중앙 정렬, 단 엘리먼트가 full-width가 아닌 경우에 정렬됨 -->
+
+<div class="container mt-3">
+	<h1>Width Utilities</h1>
+	<div class="w-25 bg-warning">Width 25%</div> <!-- w-25는 25% -->
+	<div class="w-50 bg-warning">Width 50%</div> <!-- w-50는 50% -->
+	<div class="w-75 bg-warning">Width 75%</div> <!-- w-75는 75% -->
+	<div class="w-100 bg-warning">Width 100%</div> <!-- w-100는 100% -->
+	<div class="mw-100 bg-warning">max-Width 100%</div> <!-- mw는 max-width로 최대 width로 스크린의 크기가 이 이하가 
+		되면 내용이 아래로 쌓여서 보임-->
+	
+</div>
+
+<div class="container mt-3">
+	<h1>Width Utilities</h1>
+		<div style="height:200px;background-color:#ddd">
+		<div class="h-25 d-inline-block p-2 bg-warning">Height 25%</div>
+		<div class="h-50 d-inline-block p-2 bg-warning">Height 50%</div>
+		<div class="h-75 d-inline-block p-2 bg-warning">Height 75%</div>
+		<div class="h-100 d-inline-block p-2 bg-warning">Height 100%</div>
+		<div class="mh-100 d-inline-block p-2 bg-warning" style="height:500px">Max Height 25%</div>
+	</div>
+	<!-- d-inline-block은 display:inline-block -->	
+</div>
+
+<div class="container mt-3">
+	<h1>패딩과 마진관련 클래스</h1>
+	<p>클래스명은 m,p 표시방식은 이름+side+기기크기+속성값(0~5)</p>
+	<p>mt-sm-3, pb-3(xs는 기기크기 생략), px-lg-3 </p>
+	<div class="pt-4 bg-warning">I only have a top padding (1.5rem = 24px)</div>
+	<div class="p-5 bg-success">I hava a padding on all sides (3rem = 48px)</div>
+	<div class="m-5 pb-5 bg-info">I have a margin on all sides (3rem = 48px)
+		and a bottom padding (3rem = 48px)</div>
+	<!-- p-sm-5처럼 사이드 표시 없을시는 4개 사이드 모두 가르킴 -->
+
+</div>
+
+<div class="container mt-3">
+	<h1>Box shadows</h1>
+	<div class="shadow-none p-4 mb-4 bg-light">No shadow</div>
+	<div class="shadow-sm p-4 mb-4 bg-light">Small shadow</div> <!-- 그림자 크기를 적게 -->
+	<div class="shadow p-4 mb-4 bg-white">Default shadow</div> <!-- 기본 그림자 -->
+	<div class="shadow-lg p-4 mb-4 bg-white">Large shadow</div> <!-- 큰 그림자 효과 -->
+
+</div>
+
+<div class="container mt-3">
+	<h1>수직정렬(block레벨 엘리먼트에서 동작 안함)</h1>
+	<i class="align-baseline">baseline</i>
+	<i class="align-top">top</i>
+	<i class="align-middle">middle</i>
+	<i class="align-bottom">bottom</i>
+	<i class="align-text-top">text-top</i>
+	<i class="align-text-bottom">text-bottom</i>
+</div>
+
+</body>
+</html>
+

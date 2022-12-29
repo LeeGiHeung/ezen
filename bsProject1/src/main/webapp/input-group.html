@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>input-group</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+	<h2>입력창에 도움말 처리</h2>
+	<form>
+		<div class="input-group mb-3"> <!-- 도움말을 가진 control들 처리 -->
+			<!-- control앞에 도움말 넣기 input-group-prepend에 도움말 내용을 가진 엘리먼트를 span으로 받음 -->
+			<div class="input-group-prepend">
+				<span class="input-group-text">@</span> <!-- input-group-text로 도움말 표시 -->
+			</div>		
+			<input type="text" class="form-control" placeholder="Username" id="usr" name="username">
+		</div>
+		<br/>
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Your Email" id="mail" name="email">
+				<!-- 입력창 뒷부분에 도움말 붙이기 -->
+				<div class="input-group-append">
+				<span class="input-group-text">@example.com</span>		
+			</div>
+		</div>			
+		<button type="submit" class="btn bt-primary">Submit</button>
+	</form>	
+</div>
+
+<div class="input-group input-group-lg mb-3">
+			<input type="text" class="form-control" placeholder="Your Email" id="mail" name="email">
+				<!-- 입력창 뒷부분에 도움말 붙이기 -->
+				<div class="input-group-append">
+				<span class="input-group-text">@example.com</span>		
+			</div>
+		</div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+	
+
+<div class="container mt-3">
+	<h3>다수개의 입력창 또는 도움말 넣기</h3>
+	<form>
+		<div class="input-group mb-3"> <!-- 일렬 배치 -->
+			<div class="input-group-prepend">
+				<span class="input-group-text">Person</span>
+			</div>
+			<!-- 두개의 입력창을 일렬 배치 form-control은 원래 수직 배치-->
+			<input type="text" class = "form-control" placeholder="First Name">
+			<input type="text" class = "form-control" placeholder="Last Name">
+			
+		</div>
+	</form>
+
+	<form>
+		<div class="input-group mb-3"> 
+			<div class="input-group-prepend"> <!-- 복수개 도움말은 span을 복수개로 -->				
+				<span class="input-group-text">One</span>
+				<span class="input-group-text">Two</span>
+				<span class="input-group-text">Three</span>			
+			</div>
+		<input type="text" class = "form-control"">					
+	</div>
+</form>
+</div>
+
+<div class="container mt-3">
+	<h3>checkbox나 radio control을 도움말로 사용</h3>
+	<form>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<div class="input-group-text"> <!-- span대신 사용 -->
+					<input type="checkbox"> <!-- checkbox추가 -->
+				</div>
+			</div>
+			<input type="text" class="form-control" placeholder="Some text">
+		</div>
+		<br/>
+		
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<div class="input-group-text"> <!-- span대신 사용 -->
+					<input type="radio"> <!-- checkbox추가 -->
+				</div>
+			</div>
+			<input type="text" class="form-control" placeholder="Some text">
+		</div>	
+	</form>
+</div>
+
+<div class="container mt-3">
+	<h3>button을 도움말 형태로 사용</h3>
+	<form>
+		<div class="input-groupb mb-3">
+			<div class="input-group-prepend"> <!-- button은 바로 사용-->
+				<button class="btn btn-outline-primary" type="button">Basic Button</button>
+			</div>
+			<input type="text" class="form-control" placeholder="Some text">
+		</div>
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Search">
+			<div class="input-group-append"> <!-- 입력창 뒤에 배치 -->
+				<button class="btn btn-success" type="submuit">Go</button>
+			</div>		
+		</div>	
+	
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Search">
+			<div class="input-group-append"> <!-- 입력창 뒤에 배치 -->
+				<button class="btn btn-success" type="submuit">Go</button>
+				<button class="btn btn-danger" type="submuit">Cancel</button>
+			</div>
+		</div>	
+	</form>
+</div>
+
+<div class="container mt-3">
+	<h3>dropdown 메뉴를 도움말 형태로 사용</h3>
+	<form>
+		<div class="input-group mt-3 mb-3">
+			<div class="input-group-prepend">
+				<button type="button" class="btn btn-outline-secondary dropdown-toggle"
+					data-toggle="dropdown"> <!-- 드롭다운용 버튼 -->
+				
+				</button>					
+				<div class="dropdown menu">
+					<a class="dropdown-item" href="#">Link1</a>
+					<a class="dropdown-item" href="#">Link2</a>
+					<a class="dropdown-item" href="#">Link3</a>
+				</div>		
+			</div>
+				<input type="text" class="form-control" placeholder="Username">
+		
+		</div>
+	</form>
+</div>
+
+
+<div class="container mt-3">
+	<h3>label을 input-group에 적용</h3>
+	<form>
+	<!-- label은 이름이므로 input-group외부에 만듬 -->
+		<label for="demo">Write your email here:</label>
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Email" id="demo" name="email">
+			<div class="input-group-append">
+				<span class="input-group-text">@example.com</span>
+			</div>
+		
+		</div>
+	
+	</form>	
+</div>
+
+
+
+<!-- ---------------  문제  --------------------->
+
+<h2 class="text-center">회원가입</h2>
+
+<div class="container mt-3">
+	<h2>가입자 성명</h2>
+	<form>
+		<div class="input-group mb-3"> 
+			<div class="input-group-prepend">
+				<span class="input-group-text">성명</span> 
+			</div>		
+			<input type="text" class="form-control" placeholder="Name" id="usr" name="username">
+		</div>
+		<br/>
+		
+	</form>	
+</div>
+
+<div class="container">
+	<form action="#" method="post" >
+		<div class="form-group"> 
+			<label for="email">ID:</label>
+			<input type="email" id="email" class="form-control" placehorder="Enter email" name="email"/>		
+		</div>
+		<div class="form-group"> 
+			<label for="pwd">Password:</label>
+			<input type="email" id="pwd" class="form-control" placehorder="Enter pass" name="pswd"/>		
+		</div>
+	</form>
+</div>
+
+
+<div class="container mt-3">
+	<h2>주소</h2>
+	<form>
+		<div class="input-group mb-3"> 
+			<div class="input-group-prepend">
+				<span class="input-group-text">주소</span> 
+			</div>		
+			<input type="text" class="form-control" placeholder="Address" id="usr" name="username">
+		</div>
+		<br/>		
+	</form>	
+</div>
+
+<div class="container mt-3">
+	<h2>전화번호</h2>
+	<form>
+		<div class="input-group mb-3"> 
+			<div class="input-group-prepend">
+				<span class="input-group-text">+82</span> 
+			</div>		
+			<input type="text" class="form-control" placeholder="PhoneNumber" id="usr" name="username">
+		</div>
+		<br/>
+		
+	</form>	
+</div>
+
+<div class="container">
+	<h2 class="text-center" style="text-shadow:2px 2px 4px #000000;">취미</h2>
+	<form>
+		<div class="from-group">
+			<label for="sel1">hobby</label>
+			<select class="form-control" id="sel1" name="sellist1">
+				<option>독서</option>
+				<option>영화</option>
+				<option>조깅</option>
+				<option>먹방</option>
+			</select>
+	</form>
+</div>
+
+<div class="container">
+	<h2 class="text-center" style="text-shadow:2px 2px 4px #000000;">학력</h2>
+	<form action="#">
+		<div class="form-group form-check">
+			<label class="form-check-label" for="radio1">
+				<input type="radio" class="form-check-input" id="radio1" name="radio1"
+					value="something" checked>대학원졸						
+			</label>
+		</div>
+		
+		<div class="form-group form-check">
+			<label class="form-check-label" for="radio2">
+				<input type="radio" class="form-check-input" id="radio2" name="radio2"
+					value="something">대졸
+			</label>
+		</div>	
+		
+		<div class="form-group form-check">
+			<label class="form-check-label" for="radio1">
+				<input type="radio" class="form-check-input" id="radio3" name="radio3"
+					value="something">고졸
+			</label>
+		</div>		
+		
+	<div class="form-group form-check">
+			<label class="form-check-label" for="radio1">
+				<input type="radio" class="form-check-input" id="radio4" name="radio4"
+					value="something">기타
+			</label>
+		</div>		
+	</form>	
+		
+	<button type="submit" class="btn btn-warning"></button>
+</div>
+
+
+	
+	
+</div>
+</body>
+</html>
+
+<!-- >
+	회원가입폼을 만듬
+	가입자 성명 
+	ID
+	Password
+	주소 
+	전화번호
+	취미(독서,영화,조깅,먹방 체크박스 사용)
+	학력(대학원졸,대졸,고졸,기타를 radio로)
+	
+ -->
+
+
+
+
+
+

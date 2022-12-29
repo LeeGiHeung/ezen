@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>BS4 Table</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container border border primary mt-3 table-borderless">
+	<h3>Table</h3>
+	<table class="table ">
+	<!-- table은 table엘리먼트의 기본 클래스로 콘테이너 전체를 차지하고, 약간의 패딩과 수평 테두리 제공  -->
+	<!-- table-borderless클래스는 테두리선 제거 -->
+	<!-- table은 table엘리먼트의 기본 클래스로 콘테이너 전체를 차지하고, 약간의 패딩과 수평 테두리 제공  -->
+	<!-- table-striped 클래스를 table태그에 주면 tbody은 tr중 홀수째 tr에 줄무늬를 줌 -->
+	<!-- table-bordered클래스를 추가하면 수직 테두리선이 추가 -->
+	<!-- table-hover클래스는 마우스를 호버한 중에 회색 배경색을 줌-->
+	<!-- table-dart클래스는 배경색을 검정색 글자는 하얀색으로 변경 -->	
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>			
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>John@ex.com</td>				
+			</tr>
+			<tr>
+				<td>Mary</td>
+				<td>Moe</td>
+				<td>Mary@ex.com</td>			
+			</tr>		
+			<tr>	
+				<td>Jully</td>		
+				<td>Dooley</td>		
+				<td>Jully@ex.com</td>	
+			</tr>	
+		</tbody>
+		</table>
+</div>	
+<br/>		
+<div class="container border border-primary mt-3">
+
+	<table class="table table-striped table-bordered table-hover table-dark">
+	
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>			
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>default</td>
+				<td>Doe</td>
+				<td>John@ex.com</td>				
+			</tr>
+			<tr class="table-primary">
+				<td>primary</td>
+				<td>Moe</td>
+				<td>Mary@ex.com</td>			
+			</tr>		
+			<tr class="table-success">	
+				<td>success</td>		
+				<td>Dooley</td>		
+				<td>Jully@ex.com</td>	
+			</tr>	
+			<tr class="table-danger">	
+				<td>danger</td>		
+				<td>Dooley</td>		
+				<td>Jully@ex.com</td>	
+			</tr>	
+			<tr class="table-info">	
+				<td>info</td>		
+				<td>Dooley</td>		
+				<td>Jully@ex.com</td>	
+			</tr>	
+			<tr class="table-warning">	
+				<td>warning</td>		
+				<td>Dooley</td>		
+				<td>Jully@ex.com</td>	
+			</tr>	
+			<tr class="table-active">	
+				<td>active</td>		
+				<td>Dooley</td>		
+				<td>Jully@ex.com</td>	
+			</tr>	
+			<tr class="table-secondary">	
+				<td>secondary</td>		
+				<td>Dooley</td>		
+				<td>Jully@ex.com</td>	
+			</tr>	
+			<tr class="table-light">	
+				<td>light</td>		
+				<td>Dooley</td>		
+				<td>Jully@ex.com</td>	
+			</tr>	
+			<tr class="table-dark text-dark">	
+				<td>dark</td>		
+				<td>Dooley</td>		
+				<td>Jully@ex.com</td>	
+			</tr>				
+		</tbody>
+	</table>
+</div>
+<br/>
+<div class="container border border primary mt-3 ">
+	<h3>Table</h3>
+	<table class="table">
+	<!-- table은 table엘리먼트의 기본 클래스로 콘테이너 전체를 차지하고, 약간의 패딩과 수평 테두리 제공  -->
+		<thead class="thead-dark"> <!--thead에 배경색 주기, dark시는 글자는 흰색, 회색시는 thead-light  -->
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>			
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>John@ex.com</td>				
+			</tr>
+			<tr>
+				<td>Mary</td>
+				<td>Moe</td>
+				<td>Mary@ex.com</td>			
+			</tr>		
+			<tr>	
+				<td>Jully</td>		
+				<td>Dooley</td>		
+				<td>Jully@ex.com</td>	
+			</tr>	
+		</tbody>
+	</table>
+</div>	
+<br/>
+
+<div class="container border border primary mt-3 ">
+	<h3>Table</h3>
+	<table class="table table-sm">
+	<!-- table은 table엘리먼트의 기본 클래스로 콘테이너 전체를 차지하고, 약간의 패딩과 수평 테두리 제공  -->
+	<!-- table-sm은 패딩을 50%줄여 칸폭이 줄어듬  -->	
+		<thead class="thead-dark"> <!--thead에 배경색 주기, dark시는 글자는 흰색, 회색시는 thead-light  -->
+			
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>			
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>John@ex.com</td>				
+			</tr>
+			<tr>
+				<td>Mary</td>
+				<td>Moe</td>
+				<td>Mary@ex.com</td>			
+			</tr>		
+			<tr>	
+				<td>Jully</td>		
+				<td>Dooley</td>		
+				<td>Jully@ex.com</td>	
+			</tr>	
+		</tbody>
+	</table>
+</div>	
+<br/>
+<div class="container border border primary mt-3 ">
+
+<div class="table-responsive-md"> <!-- 테이블의 컬럼이 많아 스크롤바가 필요시에 테이블용 스크롤바 수용 엘리먼트 -->
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Age</th>
+				<th>City</th>
+				<th>Firstname</th>
+				<th>Firstname</th>
+				<th>Firstname</th>
+				<th>Firstname</th>
+				<th>Firstname</th>
+				<th>Firstname</th>
+				<th>Firstname</th>
+				<th>Firstname</th>
+				<th>Firstname</th>
+				<th>Firstname</th>
+				<th>Firstname</th>
+			</tr>		
+		</thead>	
+	</table>
+</div>
+
+</body>
+</html>

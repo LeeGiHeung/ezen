@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>gird</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+	<h1>Three equal width columns</h1>
+	<div class="row"> <!-- bs4의 row클래스는 행을 나타내는 클래스로 내부의 칸이 col클래스 엘리먼트를 일렬 배치  -->
+		<div class="col" style="background-color:lavender;">.col</div>
+		<div class="col" style="background-color:orange;">.col</div>
+		<div class="col" style="background-color:lavender;">.col</div>
+	</div>
+	<!-- col클래스에 - 그리드개수 표시가 없을시는 자동 분배, 위에서는 3개 이므로 12/3 = 4그리드 분배 -->
+</div>
+
+<div class="container-fluid">
+	<h1>Responsive Columns(응답형)</h1>
+	<p>브라우져 창 크기 조정해 보세요</p>
+	<p>컬럼들이 정해진 크기보다 적어지면 아래로 적재 되어 보인다, 단 크기는 container 크기로 적용</p>
+	<div class="row">
+		<div class="col-md-3" style="background-color:lavender;">.col-sm-3</div>
+		<div class="col-md-3" style="background-color:lavenderblush;">.col-sm-3</div>
+		<div class="col-md-3" style="background-color:lavender;">.col-sm-3</div>
+		<div class="col-md-3" style="background-color:lavenderblush;">.col-sm-3</div>	
+	</div>
+</div>
+	
+<div class="container-fluid">
+	<h1>그리드 수가 다른 컬럼 배치</h1>
+	<div class="row">
+		<div class="col-md-4" style="background-color:lavender;">.col-sm-4</div>
+		<div class="col-md-8" style="background-color:lavenderblush;">.col-sm-8</div>	
+	</div>
+</div>	
+	
+</body>
+</html>

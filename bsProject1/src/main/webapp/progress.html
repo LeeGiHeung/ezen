@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>진행 바</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<h3>진행정도를 나타내는 진행바</h3>	
+	<!-- 진행바를 수용하는 클래스가 progress인 콘테이너를 만듬 -->
+	<!-- 콘테이너 안에 progressbar 클래스를 가진 엘리먼트 만듬, 진행정도는 width 속성으로 만듬 값은 %로-->
+	<!-- height는 콘테이너와 bar와 같아야 한다. -->
+	<!-- 값 표시는 콘텐츠부분에 적어준다  -->
+	<div class="progress" style="height:30px;">
+		<div class="progress-bar" style="width:70%;height:30px;">70%</div>	
+	</div>
+</div>
+
+<div class="container">
+	<h3>진행정도를 나타내는 진행바(색상의 기본은 primary색이고 배경색으로 색상 조정)</h3>	
+	<!-- 진행바를 수용하는 클래스가 progress인 콘테이너를 만듬 -->
+	<!-- 콘테이너 안에 progressbar 클래스를 가진 엘리먼트 만듬, 진행정도는 width 속성으로 만듬 값은 %로-->
+	<!-- height는 콘테이너와 bar와 같아야 한다. -->
+	<!-- 값 표시는 콘텐츠부분에 적어준다  -->
+	<div class="progress" style="height:30px;">
+		<!-- 배경색 클래스로 색상 준다 bg-danger -->
+		<!-- 줄무늬는 progress-bar-striped을 줌 -->
+		<!-- 애니메이션효과는 progress-bar-animated -->
+		<div class="progress-bar bg-danger progress-bar-animated"
+		 style="width:70%;height:30px;">70%</div>
+	</div>
+</div>
+
+<div class="container">
+	<h3>하나의 프로그래스 표시에 다수개의 바 만들기</h3>
+	<div class="progress">
+		<div class="progress-bar bg-success" style="width:40%">
+			Free Space
+		</div>
+		<div class="progress-bar bg-warning" style="width:10%">
+			Warning
+		</div>
+		<div class="progress-bar bg-danger" style="width:20%">
+			Danger
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>

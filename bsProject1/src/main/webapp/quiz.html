@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>quiz2</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("div").fadeOut(2000); //1
+	});		
+	$("button").click(function(){
+		$("div").fadeTo("slow", 0.2); //2
+	});		
+	$("button").click(function(){
+		$("div").fadeToggle(1000) //3
+	});
+	$("button").click(function(){
+		$("div").slideToggle(3000); //4
+	});		
+	$("button").click(function(){
+		$("div").animate({
+			opacity:'0.5',
+			height: '500px', 
+			width: '500px' //5
+			
+	});			
+	$("div").stop();  //6
+		
+	});		
+	$("div").slideDown("3000",function(){
+		alert("end") //7
+		
+		
+	});					
+});		
+
+</script>
+</body>
+</html>
+
+<!-- 
+1.button태그를 클릭시에 div엘리먼트를 fade로 사라지게 함(속도는 2초) 
+2.button태그를 클릭시에 div엘리먼트를 fade로 불투명도를 가지고 (속도 slow로)
+3.button태그를 클릭시에 div엘리먼트를 반복해서 fade하게 함(속도는 1초)
+4.button태그를 클릭시에 div엘리먼트를 반복해서 슬라이드하게 함 (속도는 3초)
+5.button태그를 클릭시에 div엘리먼트의 불투명도를 0.5, 높이를 500px, 넓이를 500px로 animate하게 함
+6.div엘리먼트에 slideUp효과가 진행되고 있다고 가정하고 현재 상태에서 멈추게 함
+7. div엘리먼트가 3초에 걸쳐 slideDown되고 있다고 가정하고 slideDown이 완전히 끝난뒤 alert("end")를 실행하기
+
+ -->

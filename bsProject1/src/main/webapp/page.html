@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>page 처리</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<h3>기본페이지</h3>
+	<hr/>
+	<!-- page는 콘테이너로 ul을 사용하며 클래스는 pagination -->
+	<!-- ul의 li는 페이지 각 항목을 나타내며 클래스는 page-item -->
+	<!-- 페이지 클래스 해당 페이지로 이동을 위해 a를 사용하며 클래스는 page-link이다 -->
+		<ul class="pagination"> <!-- 기본정렬은 왼쪽정렬  justify-content--->
+			<li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+			<!-- disabled클래스는 페이지 표시를 비활성화(글자가 회색,포인터 안생김)  -->
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item active"><a class="page-link" href="#">2</a></li> <!-- 선택페이지 표시 active 속성 -->
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+
+
+	<ul class="pagination justify-content-center"> <!-- 중앙정렬 -->
+			<li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+			<!-- disabled클래스는 페이지 표시를 비활성화(글자가 회색,포인터 안생김)  -->
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item active"><a class="page-link" href="#">2</a></li> <!-- 선택페이지 표시 active 속성 -->
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+	
+	
+	<ul class="pagination justify-content-end"> <!-- 오른쪽 정렬 -->
+			<li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+			<!-- disabled클래스는 페이지 표시를 비활성화(글자가 회색,포인터 안생김)  -->
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item active"><a class="page-link" href="#">2</a></li> <!-- 선택페이지 표시 active 속성 -->
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+</div>
+
+<div class="container">
+	<h3>기본페이지</h3>
+	<hr/>
+	<!-- page는 콘테이너로 ul을 사용하며 클래스는 pagination -->
+	<!-- ul의 li는 페이지 각 항목을 나타내며 클래스는 page-item -->
+	<!-- 페이지 클래스 해당 페이지로 이동을 위해 a를 사용하며 클래스는 page-link이다 -->
+		<ul class="pagination pagination-md"> <!-- 기본정렬은 왼쪽정렬  justify-content--->
+			<li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+			<!-- disabled클래스는 페이지 표시를 비활성화(글자가 회색,포인터 안생김)  -->
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item active"><a class="page-link" href="#">2</a></li> <!-- 선택페이지 표시 active 속성 -->
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+
+
+	<ul class="pagination justify-content-center pagination-sm"> <!-- 중앙정렬 -->
+			<li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+			<!-- disabled클래스는 페이지 표시를 비활성화(글자가 회색,포인터 안생김)  -->
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item active"><a class="page-link" href="#">2</a></li> <!-- 선택페이지 표시 active 속성 -->
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+	
+	
+	<ul class="pagination justify-content-end pagination-lg"> <!-- 오른쪽 정렬 -->
+			<li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+			<!-- disabled클래스는 페이지 표시를 비활성화(글자가 회색,포인터 안생김)  -->
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item active"><a class="page-link" href="#">2</a></li> <!-- 선택페이지 표시 active 속성 -->
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+			
+		
+</div>
+</body>
+</html>
+
+
+

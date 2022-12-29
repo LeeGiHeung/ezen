@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>container</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- 고정된 크기를 갖는 container를 만들기 위해서는 클래스가 container를 사용  -->
+<div class = "container border border-success mt-5 pt-3">
+	<h1>My First Bootstrap Page</h1>
+	 <p>This is inside a .container class.</p>
+	 <p>The .container class provides a responsive fixed width container</p>
+	 <p> 
+	  	 Resize the browser window to see that its width (max-width) will change at different breakpoints. 
+	 </p>	
+</div>
+<br/>
+<hr/>
+<div class ="container-fluid border border-success mt-5"> <!-- full width차지 -->
+	<h1>My First Bootstrap Page</h1>
+	<p>The part is inside a .container-fluid class.</p>
+	<p>The .container-fluid class provides a full fixed width container, spanning the entire width of the viewport. </p>
+</div>
+<br/>
+<div class="container p-3 my-3 bg-dark text-white"> <!-- bg-는 배경색 클래스 text-는 글자색 클래스  -->
+	<h1>My First Bootstrap Page</h1>
+	<p>This container has a dark background color and a white text, and some extra padding and margins.</p>
+	
+</div>
+
+<div class="container p-3 my-3 bg-primary text-white"> <!--- 색상의 이름은 그 이름이 상징하는 색상으로 표시됨   -->
+	<h1>My First Bootstrap Page</h1>
+	<p>This container has a dark background color and a white text, and some extra padding and margins.</p>
+</div>
+
+
+<h3>RWD(화면 자동 조정)</h3>
+<div class="container border">.container</div> <!-- 브라우져크기 노드에서 여백있는 콘테이너 -->
+<div class="container-sm mt-3 border">container-sm</div> <!-- 브라우져 크기 노드에서 여백있는 콘테이너 -->
+<div class="container-md mt-3 border">container-md</div> <!-- 브라우져 크기 노드에서 md이상만 여백있는 콘테이너 -->
+<div class="container-lg mt-3 border">container-lg</div> <!-- 브라우져 크기 노드에서 lg이상만 여백있는 콘테이너 -->
+<div class="container-xl mt-3 border">container-xl</div> <!-- 브라우져 크기 노드에서 xl이상만 여백있는 콘테이너 -->
+</body>
+</html>

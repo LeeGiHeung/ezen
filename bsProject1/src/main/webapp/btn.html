@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>Button</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<h2 class="text-center">Button style</h2>
+	<button type="button" class="btn">Basic</button>
+	<!-- 모서리 약간 둥글고 버튼이름색은 배경색과 어울리도록 조정됨, 호버시 색이 약간 진해짐 -->
+	<button type="button" class="btn btn-primary">Primary</button>
+	<button type="button" class="btn btn-Secondary">Secondary</button>
+	<button type="button" class="btn btn-success">success</button>
+	<button type="button" class="btn btn-Info">Info</button>
+	<button type="button" class="btn btn-Warning">Warning</button>
+	<button type="button" class="btn btn-Danger">Danger</button>
+	<button type="button" class="btn btn-Dark">Dark</button>
+	<button type="button" class="btn btn-Light">Light</button>
+	<button type="button" class="btn btn-Link">Link</button> <!-- link는 디폴트에 글자색만 푸른색, 호버시 밑줄 -->
+</div>
+<br/>
+</html>
+<div class="container">
+<!-- 버튼요소(버튼처럼 사용하는 엘리먼트)는 a,button,input(submit,button,reset) -->
+	<a href="#" class="btn btn-info" role="button">Link Button</a> <!-- a는 role="button"을 사용 -->
+	<!-- button과 input은 버튼관련 클래스 그대로 사용 -->
+	<button type="button" class="btn btn-info">Button</button>
+	<input type="button" class="btn btn-Info" value="Input Button" >
+	<input type="submit" class="btn btn-link" value="Submit Button">
+</div>
+
+<div class="container">
+	<h2>Button Outline</h2>
+	<!-- 버튼모양을 테두리선 색으로 사용, 호버시는 테두리선색이 배경색으로 보임  -->
+	<button type="button" class="btn btn-outline-primary">Primary</button>
+	<button type="button" class="btn btn-outline-secondary">Secondary</button>
+	<button type="button" class="btn btn-outline-success">Success</button>
+	<button type="button" class="btn btn-outline-info">Info</button>
+	<button type="button" class="btn btn-outline-warning">Warning</button>
+	<button type="button" class="btn btn-outline-danger">Danger</button>
+	<button type="button" class="btn btn-outline-dark">Dark</button>
+	<button type="button" class="btn btn-outline-light text dark">Light</button>
+
+</div>
+
+<div class="container">
+	<h2>Button Sizes</h2>
+	<button type="button" class="btn btn-primary btn-lg">Large</button> 
+	<button type="button" class="btn btn-primary btn-md">Default</button><!-- btn-md는 생략 가능 -->
+	<button type="button" class="btn btn-primary btn-sm">Small</button> 
+	<button type="button" class="btn btn-success btn-block">Button 2</button>  <!-- btn-block은 100%넓이 -->
+	
+</div>
+
+<div class="container">
+	<h2>Button States</h2>
+	<button type="button" class="btn btn-primary">Primary Button</button> <!-- 일반상태 -->
+	<button type="button" class="btn btn-primary active">Active Primary</button><!-- 클래스 active는 활성화된 상태, 진한 색 -->
+	<button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+	<!-- button은 원래 html에 비활성화 속성 disabled가 있어서 클래스의 disalbled 사용금지(input마찬가지)  -->
+	<a href="#" class="btn btn-primary disabled">Disabled Link</a> <!-- a는 html에 disabled속성이 없으므로 클래스 disabled를 사용 -->
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>Form</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<h2 class="text-center">수직배치 form</h2>
+	<form action="#" method="post" >
+		<div class="form-group"> <!-- label과 입력창을 묶어주는 form-group 클래스 -->
+			<label for="email">Email:</label>
+			<!-- form-control클래스는 full-width 즉 블록레벨  -->
+			<input type="email" id="email" class="form-control" placehorder="Enter email" name="email"/>		
+		</div>
+		<div class="form-group"> <!-- label과 입력창을 묶어주는 form-group 클래스 -->
+			<label for="pwd">Email:</label>
+			<!-- form-control클래스는 full-width 즉 블록레벨  -->
+			<input type="email" id="pwd" class="form-control" placehorder="Enter pass" name="pswd"/>		
+		</div>
+		<div class="form-group form-check"> <!-- checkbox는 form-check클래스 추가  -->
+			<label class="form-check-label">
+				<input class="form-check-input" type="checkbox" name="remember"> Remember me 
+				<!-- form-control대신 form-check-input 사용 -->
+			</label>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>		
+	</form>
+</div>
+
+<br/><br/>
+
+<div class="container">
+	<h2>Form Grid</h2>
+	<form>
+		<!-- 하나의 row안에 2개의 col이 있으므로 그리드 12개를 균등 분배하여 6개씩 차지 -->
+		<div class="row"> <!-- 줄을 만드는 클래스  -->
+			<div class="col"> <!-- 칸을 만드는 클래스 grid로 처리 -->
+				<input type="text" class="form-control" id="email" placeholder="Enter email" name="email"/>
+			</div>
+			<div class="col">
+				<input type="password" class="form-control" id="email" placeholder="Enter password" name="pswd"/>
+			</div> 
+		</div>
+		<button type="submit" class="btn btn-primary mt-3">Submit</button>
+		
+	</form>
+</div>
+
+<div class="container">
+	<h2>Form Grid(form-row사용 )</h2>
+	<form>
+		<!-- 하나의 row안에 2개의 col이 있으므로 그리드 12개를 균등 분배하여 6개씩 차지 -->
+		<div class="form-row"> <!-- 줄을 만드는 클래스로 컬럼간 간격을 줄임  -->
+			<div class="col"> <!-- 칸을 만드는 클래스 grid로 처리 -->
+				<input type="text" class="form-control" id="email" placeholder="Enter email" name="email"/>
+			</div>
+			<div class="col">
+				<input type="password" class="form-control" id="email" placeholder="Enter password" name="pswd"/>
+			</div> 
+		</div>
+		<button type="submit" class="btn btn-primary mt-3">Submit</button>
+		
+	</form>
+</div>
+
+<br/><br/>
+<div class="container">
+	<h2>Form Vaildation</h2>
+	<form action="#" class="was-validated"> <!-- submit전 체크 -->
+		<div class="form-group">
+			<label for="uname">Username</label>
+		<input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+		<div class="vaild-feedback">Valid.</div> <!-- 체크시 입력이 타당하지 않을시 보이는 엘리먼트 빨간색 -->
+		<div class="invalid-feedback">Please fill out this field.</div> <!-- 체크시 입력시 타당할시 보이는 엘리먼트 흑색 -->
+		</div>
+		<div class="form-group form-check"> <!-- checkbox나 radio시 form-check추가 -->
+			<label class="form-check-label">
+				<input class="form-check-input" type="checkbox" name="rememeber" required> I agree on blabla~
+			</label>		
+		<button type="submit" class="btn btn-priamry">Submit</button>
+		</div>
+	</form>
+</div>
+
+<br/><br/>
+<div class="container">
+	<h2>Form Vaildation(submit후)</h2>
+	<form action="#" class="need-validation"> <!-- submit전 체크 -->
+		<div class="form-group">
+			<label for="uname">Username</label>
+		<input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+		<div class="vaild-feedback">Valid.</div> <!-- 체크시 입력이 타당하지 않을시 보이는 엘리먼트 빨간색 -->
+		<div class="invalid-feedback">Please fill out this field.</div> <!-- 체크시 입력시 타당할시 보이는 엘리먼트 흑색 -->
+		</div>
+		<div class="form-group form-check"> <!-- checkbox나 radio시 form-check추가 -->
+			<label class="form-check-label">
+				<input class="form-check-input" type="checkbox" name="rememeber" required> I agree on blabla~
+			</label>		
+		<button type="submit" class="btn btn-priamry">Submit</button>
+		</div>
+	</form>
+</div>
+
+<div class="container">
+	<h2>Form Vaildation(submit후)</h2>
+	<form action="#" class="need-validation" novalidate> <!-- submit후 체크, html자체 처리 하지 말것 -->
+		<div class="form-group">
+			<label for="uname">Username</label>
+		<input type="text" class="form-control" id="uname1" placeholder="Enter username" name="uname" required>
+		<div class="vaild-feedback">Valid. <!-- 체크시 입력이 타당하지 않을시 보이는 엘리먼트 빨간색 -->
+		<div class="invalid-feedback">Please fill out this field.</div> <!-- 체크시 입력시 타당할시 보이는 엘리먼트 흑색 -->
+		</div>
+		<div class="form-group form-check"> <!-- checkbox나 radio시 form-check추가 -->
+			<label class="form-check-label">
+				<input class="form-check-input" type="checkbox" name="rememeber" required> I agree on blabla~
+				<div class="vaild-feedback">Valid. 
+				<div class="invalid-feedback">Check this checkbox to continue.</div> 
+			</label>	
+		</div> 	
+		<button type="submit" class="btn btn-priamry">Submit</button>
+		</div>
+	</form>
+</div>
+<script>
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})(); //()는 실행연산자
+</script>
+</body>
+</html>
+
+
+<!--1. menu bar만들기(로고,문자 텍스트,고정 ,콜랩스 버튼)
+	2. 입력창 만들기 
+-->

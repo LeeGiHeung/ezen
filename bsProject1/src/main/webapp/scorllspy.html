@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- MS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9"/>
+<title>scrollspy</title>
+<!--boostrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!--jqeury-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--propper jquery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!--latest javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+body{
+	position : relative; /* 위치를 지정할 수 있음 */
+	
+}
+
+
+</style>
+</head>
+<body>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- body전체에 대해 scroll시 데이터 위치를 염탐하여 메뉴바에 표시 data-offset="50"은 스크롤시 대상위치의 top으로 부터
+	 이격 거리로 기본은 10 -->
+<!-- scroll-spy시 내용 위치에 따라 마크되는 메뉴바 만들기  -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+	<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" href="#section1">Section 1</a>
+		</li>	
+		
+		<li class="nav-item">
+			<a class="nav-link" href="#section2">Section 2</a>
+		</li>	
+		
+		<li class="nav-item">
+			<a class="nav-link" href="#section3">Section 3</a>
+		</li>	
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				Section 4
+			</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#section41">Link 1</a>
+				<a class="dropdown-item" href="#section42">Link 2</a>
+			</div>
+			
+		</li>		
+	</ul>
+</nav>
+
+<!-- 메뉴바에의 각 메뉴시 클릭시 연결되는 내용부분 -->
+<div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+	<h1>Section 1</h1>
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+</div>
+
+<div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+	<h1>Section 2</h1>
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+</div>
+
+<div id="section3" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+	<h1>Section 3</h1>
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+	
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+</div>
+
+<div id="section41" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+	<h1>Section 41</h1>
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+	
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+	
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+	
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+</div>
+
+<div id="section42" class="container-fluid bg-primary" style="padding-top:70px;padding-bottom:70px">
+	<h1>Section 42</h1>
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+</div>
+
+
+<div id="section43" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+	<h1>Section 43</h1>
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+
+	<p>Try to scroll this section and look at the navigation bar while scrolling!
+	Try to scroll this section and look at the navigation bar while scrolling!
+	</p>
+</div>
+
+</body>
+</body>
+</html>
